@@ -25,4 +25,3 @@
 
 // export default UpdateComponent(ClickCounter)
 
-const 

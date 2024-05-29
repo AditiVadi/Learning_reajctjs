@@ -13,9 +13,8 @@ import Hero from './components/Hero';
 import ErrorBoundary from './components/ErrorBoundary';
 import ClickCounter from './components/ClickCounter';
 import HoverCounter from './components/HoverCounter';
-// import  Greet  from './components/Greet'
-//  import welcome from './components/welcome'
-// import  Welcome  from './components/Welcome'
+import Greet from './components/Greet';
+import Welcome from './components/Welcome';
 // import Mapmethod from './components/Mapmethod';
 //import  Hello  from './components/Hello'
 //import  Msg  from './components/Msg'
@@ -75,6 +74,8 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
+      <Greet name='aditi' heroname='jjj'/>
+      <Welcome name='aditi' heroname='jjj'/>
         {/* <Froms/> */}
         {/* <LifecycleA/> */}
         {/* <FregmentDemo/> */}
@@ -91,9 +92,9 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
         <Hero heroName="Joker"/> 
-        </ErrorBoundary> */}
+        </ErrorBoundary> 
         <ClickCounter/>
-        <HoverCounter />
+        <HoverCounter />*/}
       </div>
     )
   }
