@@ -18,6 +18,7 @@ import LifecycleBchild from './LifecycleBchild';
     componentDidMount(){
         console.log('LifecycleA componentDidMount')
     }
+    //Updating lifecycle method
     shouldComponentUpdate(){
         console.log('LifecycleA shouldComponentUpdate')
         return true 
@@ -28,7 +29,7 @@ import LifecycleBchild from './LifecycleBchild';
     }
     componentDidUpdate(){
         console.log('LifecycleA componentDidUpdate')
-    }
+    }//till this 
     changeState = ()=>{
         this.setState({
             name:'codevolustion'

@@ -7,7 +7,7 @@ import React, { Component } from 'react'
       this.state = {
          username: '',
          Comments:'',
-         topic:''
+         topic:'recat'
       }
     }
     handleUsernameChange =(event)=>{
@@ -27,7 +27,7 @@ import React, { Component } from 'react'
     }
     handleSubmit = evevt=>{
         alert(`${this.state.username} ${this.state.Component} ${this.state.topic}`)
-        evevt.preventDefault()
+        evevt.preventDefault()//to prevent to go to default values
     }
   render() {
     const { username,comments,topic}= this.state//have this.state remove karvu hoy to thai

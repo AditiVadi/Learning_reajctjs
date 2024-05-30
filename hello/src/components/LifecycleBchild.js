@@ -17,6 +17,7 @@ import React, { Component } from 'react'
     componentDidMount(){
         console.log('LifecycleBchild componentDidMount')
     }
+    //Updating lifecycle method
     shouldComponentUpdate(){
         console.log('LifecycleB shouldComponentUpdate')
         return true 
