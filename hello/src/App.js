@@ -1,20 +1,20 @@
 import React,{Component} from 'react';//must
-import logo from './logo.svg';
 import './App.css';
-import LifecycleA from './components/LifecycleA';
-import FregmentDemo from './components/FregmentDemo';
-import Table from './components/Table'
-import PureComp from './components/PureComp';
-import ParentComp from './components/ParentComp';
-import RefsDemo from './components/RefsDemo';
-import FocusInput from './components/FocusInput';
-import FRParentInput from './components/FRParentInput';
-import Hero from './components/Hero';
-import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
-import Greet from './components/Greet';
-import Welcome from './components/Welcome';
+import NameList from './components/NameList';
+// import LifecycleA from './components/LifecycleA';
+// import FregmentDemo from './components/FregmentDemo';
+// import Table from './components/Table'
+// import PureComp from './components/PureComp';
+// import ParentComp from './components/ParentComp';
+// import RefsDemo from './components/RefsDemo';
+// import FocusInput from './components/FocusInput';
+// import FRParentInput from './components/FRParentInput';
+// import Hero from './components/Hero';
+// import ErrorBoundary from './components/ErrorBoundary';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+// import Greet from './components/Greet';
+// import Welcome from './components/Welcome';
 // import Mapmethod from './components/Mapmethod';
 //import  Hello  from './components/Hello'
 //import  Msg  from './components/Msg'
@@ -74,9 +74,9 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-      <Greet name='aditi' heroname='jjj'/>
+      {/*<Greet name='aditi' heroname='jjj'/>
       <Welcome name='aditi' heroname='jjj'/>
-        {/* <Froms/> */}
+         <Froms/> */}
         {/* <LifecycleA/> */}
         {/* <FregmentDemo/> */}
         {/* <Table/> */}
@@ -95,6 +95,7 @@ class App extends Component {
         </ErrorBoundary> 
         <ClickCounter/>
         <HoverCounter />*/}
+        <NameList/>
       </div>
     )
   }
