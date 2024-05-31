@@ -15,10 +15,12 @@ import './App.css';
 // import ClickCounter from './components/ClickCounter';
 // import HoverCounter from './components/HoverCounter';
 // import User from './components/User';
-import Counters from './components/Counters';
-import ClickCounterTwo from './components/ClickCounterTwo';
-import HoverCounterTwo from './components/HoverCounterTwo';
-import  Counter  from './components/Counter'
+// import Counters from './components/Counters';
+// import ClickCounterTwo from './components/ClickCounterTwo';
+// import HoverCounterTwo from './components/HoverCounterTwo';
+// import  Counter  from './components/Counter'
+import CompC from './components/CompC';
+import { UserProvider } from './components/userContext';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Mapmethod from './components/Mapmethod';
@@ -104,7 +106,7 @@ class App extends Component {
         <PortalDemo/>
         <ClickCounterTwo/>
         <HoverCounterTwo/>
-        <User render={(isLoggedIn)=>isLoggedIn?'Aditi':"Gest"}/>*/}
+        <User render={(isLoggedIn)=>isLoggedIn?'Aditi':"Gest"}/>
         <Counters>
           {(count, incrementCount) => (
             <ClickCounterTwo count={count} incrementCount={incrementCount}/>)
@@ -112,7 +114,11 @@ class App extends Component {
           <Counter
           render={(count, incrementCount) => (
             <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>)
-          } />
+          } />*/}
+          <UserProvider value="aditi">
+          <CompC/>
+          </UserProvider>
+          
       </div>
     )
   }
