@@ -1,6 +1,7 @@
 import React,{Component} from 'react';//must
 import './App.css';
-import NameList from './components/NameList';
+import PortalDemo from './components/PortalDemo';
+// import NameList from './components/NameList';
 // import LifecycleA from './components/LifecycleA';
 // import FregmentDemo from './components/FregmentDemo';
 // import Table from './components/Table'
@@ -94,8 +95,9 @@ class App extends Component {
         <Hero heroName="Joker"/> 
         </ErrorBoundary> 
         <ClickCounter/>
-        <HoverCounter />*/}
-        <NameList/>
+        <HoverCounter />
+        <NameList/>*/}
+        <PortalDemo/>
       </div>
     )
   }
