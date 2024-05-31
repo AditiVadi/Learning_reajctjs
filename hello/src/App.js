@@ -1,6 +1,6 @@
 import React,{Component} from 'react';//must
 import './App.css';
-import PortalDemo from './components/PortalDemo';
+// import PortalDemo from './components/PortalDemo';
 // import NameList from './components/NameList';
 // import LifecycleA from './components/LifecycleA';
 // import FregmentDemo from './components/FregmentDemo';
@@ -12,8 +12,8 @@ import PortalDemo from './components/PortalDemo';
 // import FRParentInput from './components/FRParentInput';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-// import ClickCounter from './components/ClickCounter';
-// import HoverCounter from './components/HoverCounter';
+import ClickCounter from './components/ClickCounter';
+import HoverCounter from './components/HoverCounter';
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Mapmethod from './components/Mapmethod';
@@ -93,11 +93,11 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
         <Hero heroName="Joker"/> 
-        </ErrorBoundary> 
+        </ErrorBoundary> */}
         <ClickCounter/>
         <HoverCounter />
-        <NameList/>*/}
-        <PortalDemo/>
+        {/*<NameList/>
+        <PortalDemo/>*/}
       </div>
     )
   }
