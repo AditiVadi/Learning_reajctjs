@@ -1,4 +1,4 @@
-import React,{Component} from 'react';//must
+import React, { Component } from 'react';//must
 import './App.css';
 // import PortalDemo from './components/PortalDemo';
 // import NameList from './components/NameList';
@@ -12,14 +12,18 @@ import './App.css';
 // import FRParentInput from './components/FRParentInput';
 // import Hero from './components/Hero';
 // import ErrorBoundary from './components/ErrorBoundary';
-import ClickCounter from './components/ClickCounter';
-import HoverCounter from './components/HoverCounter';
+// import ClickCounter from './components/ClickCounter';
+// import HoverCounter from './components/HoverCounter';
+// import User from './components/User';
+import Counters from './components/Counters';
+import ClickCounterTwo from './components/ClickCounterTwo';
+import HoverCounterTwo from './components/HoverCounterTwo';
+import  Counter  from './components/Counter'
 // import Greet from './components/Greet';
 // import Welcome from './components/Welcome';
 // import Mapmethod from './components/Mapmethod';
 //import  Hello  from './components/Hello'
 //import  Msg  from './components/Msg'
-//import  Counter  from './components/Counter'
 //import  FunctionClick from './components/FunctionClick'
 //import  ClassClick from './components/ClassClick'
 //import  EventBind from './components/EventBind'
@@ -58,11 +62,11 @@ import HoverCounter from './components/HoverCounter';
 //       <FunctionClick></FunctionClick>
 //       <ClassClick></ClassClick>
 //       <EventBind></EventBind>}
-    
+
 //   <PareCom> </PareCom>
 //    <HookCounterFour/>*/}
-      
-    
+
+
 //       { /*<Hello></Hello>*/}
 //     </div>
 //   );
@@ -75,7 +79,7 @@ class App extends Component {
   render() {
     return (
       <div className='App'>
-      {/*<Greet name='aditi' heroname='jjj'/>
+        {/*<Greet name='aditi' heroname='jjj'/>
       <Welcome name='aditi' heroname='jjj'/>
          <Froms/> */}
         {/* <LifecycleA/> */}
@@ -93,11 +97,22 @@ class App extends Component {
         </ErrorBoundary>
         <ErrorBoundary>
         <Hero heroName="Joker"/> 
-        </ErrorBoundary> */}
+        </ErrorBoundary>
         <ClickCounter/>
-        <HoverCounter />
+        <HoverCounter /> */}
         {/*<NameList/>
-        <PortalDemo/>*/}
+        <PortalDemo/>
+        <ClickCounterTwo/>
+        <HoverCounterTwo/>
+        <User render={(isLoggedIn)=>isLoggedIn?'Aditi':"Gest"}/>*/}
+        <Counters>
+          {(count, incrementCount) => (
+            <ClickCounterTwo count={count} incrementCount={incrementCount}/>)
+          } </Counters>
+          <Counter
+          render={(count, incrementCount) => (
+            <HoverCounterTwo count={count} incrementCount={incrementCount}></HoverCounterTwo>)
+          } />
       </div>
     )
   }
@@ -107,4 +122,4 @@ class App extends Component {
 
 
 export default App;
- //<Greet></Greet >
+//<Greet></Greet >
