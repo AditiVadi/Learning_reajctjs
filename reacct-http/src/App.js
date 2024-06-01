@@ -1,6 +1,7 @@
 
 import './App.css';
-import HookswithArray from './components/Hooks/HookswithArray';
+import Useeffectcount from './components/Hooks/Useeffectcount';
+//import HookswithArray from './components/Hooks/HookswithArray';
 //import HokkCounterThree from './components/Hooks/HokkCounterThree';
 //import HookCounter from './components/Hooks/HookCounter';
 //import HookCounterTwo from './components/Hooks/HookCounterTwo';
@@ -14,8 +15,9 @@ function App() {
       <PostForm/>
       <HookCounter/>
       <HookCounterTwo/>
-      <HokkCounterThree/>*/}
-      <HookswithArray/>
+      <HokkCounterThree/>
+      <HookswithArray/>*/}
+      <Useeffectcount/>
     </div>
   );
 }
