@@ -1,5 +1,6 @@
 
 import './App.css';
+import HookMouse from './components/Hooks/HookMouse';
 import Useeffectcount from './components/Hooks/Useeffectcount';
 //import HookswithArray from './components/Hooks/HookswithArray';
 //import HokkCounterThree from './components/Hooks/HokkCounterThree';
@@ -16,8 +17,9 @@ function App() {
       <HookCounter/>
       <HookCounterTwo/>
       <HokkCounterThree/>
-      <HookswithArray/>*/}
-      <Useeffectcount/>
+      <HookswithArray/>
+      <Useeffectcount/>*/}
+      <HookMouse/>
     </div>
   );
 }
