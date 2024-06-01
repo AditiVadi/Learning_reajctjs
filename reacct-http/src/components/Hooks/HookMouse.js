@@ -15,6 +15,11 @@ const logMousePosition=e=>{
 useEffect(()=>{
     console.log("useEffect Called");
     window.addEventListener('mousemove',logMousePosition)
+
+    return ()=>{
+      console.log('component unmount')
+      window.removeEventListener('mousemove',logMousePosition)
+    }//cleanUp code componentWillUnmount
 },[])
   return (
     <div>
