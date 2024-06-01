@@ -19,7 +19,7 @@ useEffect(()=>{
     return ()=>{
       console.log('component unmount')
       window.removeEventListener('mousemove',logMousePosition)
-    }//cleanUp code componentWillUnmount
+    }//cleanUp code componentWillUnmount=>for memory lick
 },[])
   return (
     <div>
