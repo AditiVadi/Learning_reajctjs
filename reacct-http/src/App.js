@@ -1,6 +1,8 @@
 
+import React from 'react';
 import './App.css';
-import DataFetching from './components/Hooks/DataFetching';
+import CompC from './components/Hooks/Context/CompC';
+//import DataFetching from './components/Hooks/DataFetching';
 //import IntervalHookCounter from './components/Hooks/IntervalHookCounter';
 //import HookMouse from './components/Hooks/HookMouse';
 //import MouseContainer from './components/Hooks/MouseContainer';
@@ -12,6 +14,8 @@ import DataFetching from './components/Hooks/DataFetching';
 //import PostForm from './components/PostForm';
 //import PostList from './components/PostList';
 
+export const UserContext = React.createContext()
+export const ChannelContext = React.createContext()
 function App() {
   return (
     <div className="App">
@@ -24,8 +28,14 @@ function App() {
       <Useeffectcount/>
       <HookMouse/>
       <MouseContainer/>
-      <IntervalHookCounter/>*/}
-      <DataFetching/>
+      <IntervalHookCounter/>
+      <DataFetching/>*/}
+      <UserContext.Provider value={'aditi'}>
+        <ChannelContext.Provider value={'code'}>
+          <CompC />
+        </ChannelContext.Provider>
+      </UserContext.Provider>
+
     </div>
   );
 }
