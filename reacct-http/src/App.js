@@ -1,40 +1,14 @@
-import React,{ useReducer } from 'react'
+import React from 'react'
 import './App.css';
-import CompA from './components/useReducerWithuseContext/CompA';
-import CompB from './components/useReducerWithuseContext/CompB';
-import CompC from './components/useReducerWithuseContext/CompC';
-
-export const CountContext=React.createContext()
-
-const initialState = 0;
-const reducer = (state, action) => {
-  switch (action) {
-    case 'increment':
-      return state + 1
-
-    case 'decrement':
-      return state - 1
-
-    case 'reset':
-      return initialState
-    default:
-      return state
-  }
-}
-
+import UseState from './components/Data Fectching/UseState';
+import UseReducer from './components/Data Fectching/UseReducer';
 
 function App() {
-  const [count, dispatch] = useReducer(reducer, initialState);
   return (
-    <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
-    <div className="App">
-      Count - {count}
-      <CompA />
-      <CompB />
-      <CompC />
-
-    </div>
-    </CountContext.Provider>
+    <React.Fragment>
+    UseState=<UseState/>
+   <h1>UseReducer=<UseReducer/></h1> 
+    </React.Fragment>
   );
 }
 
