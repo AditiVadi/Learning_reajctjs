@@ -1,11 +1,11 @@
 import React from 'react'
 import './App.css';
-import ParentComp from './components/useCallback_Hook/ParentComp';
+import Counter from './components/useMemo_Hook/Counter';
 
 function App() {
   return (
     <div className='App'>
-    <ParentComp/>
+   <Counter/>
     </div>
   );
 }
