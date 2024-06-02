@@ -3,7 +3,8 @@ import React from 'react';
 import './App.css';
 //import CompC from './components/Hooks/Context/CompC';
 //import CounterOne from './components/useReducer/CounterOne';
-import CounterTow from './components/useReducer/CounterTow';
+//import CounterTow from './components/useReducer/CounterTow';
+import CounterThree from './components/useReducer/CounterThree';
 //import DataFetching from './components/Hooks/DataFetching';
 //import IntervalHookCounter from './components/Hooks/IntervalHookCounter';
 //import HookMouse from './components/Hooks/HookMouse';
@@ -37,8 +38,9 @@ function App() {
           <CompC />
         </ChannelContext.Provider>
       </UserContext.Provider>
-      <CounterOne/>*/}
-      <CounterTow/>
+      <CounterOne/>
+      <CounterTow/>*/}
+      <CounterThree/>
 
     </div>
   );
