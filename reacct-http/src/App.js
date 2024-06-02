@@ -1,48 +1,40 @@
-
-import React from 'react';
+import React,{ useReducer } from 'react'
 import './App.css';
-//import CompC from './components/Hooks/Context/CompC';
-//import CounterOne from './components/useReducer/CounterOne';
-//import CounterTow from './components/useReducer/CounterTow';
-import CounterThree from './components/useReducer/CounterThree';
-//import DataFetching from './components/Hooks/DataFetching';
-//import IntervalHookCounter from './components/Hooks/IntervalHookCounter';
-//import HookMouse from './components/Hooks/HookMouse';
-//import MouseContainer from './components/Hooks/MouseContainer';
-//import Useeffectcount from './components/Hooks/Useeffectcount';
-//import HookswithArray from './components/Hooks/HookswithArray';
-//import HokkCounterThree from './components/Hooks/HokkCounterThree';
-//import HookCounter from './components/Hooks/HookCounter';
-//import HookCounterTwo from './components/Hooks/HookCounterTwo';
-//import PostForm from './components/PostForm';
-//import PostList from './components/PostList';
+import CompA from './components/useReducerWithuseContext/CompA';
+import CompB from './components/useReducerWithuseContext/CompB';
+import CompC from './components/useReducerWithuseContext/CompC';
 
-export const UserContext = React.createContext()
-export const ChannelContext = React.createContext()
+export const CountContext=React.createContext()
+
+const initialState = 0;
+const reducer = (state, action) => {
+  switch (action) {
+    case 'increment':
+      return state + 1
+
+    case 'decrement':
+      return state - 1
+
+    case 'reset':
+      return initialState
+    default:
+      return state
+  }
+}
+
+
 function App() {
+  const [count, dispatch] = useReducer(reducer, initialState);
   return (
+    <CountContext.Provider value={{countState:count,countDispatch:dispatch}}>
     <div className="App">
-      {/*<PostList/>
-      <PostForm/>
-      <HookCounter/>
-      <HookCounterTwo/>
-      <HokkCounterThree/>
-      <HookswithArray/>
-      <Useeffectcount/>
-      <HookMouse/>
-      <MouseContainer/>
-      <IntervalHookCounter/>
-      <DataFetching/>
-      <UserContext.Provider value={'aditi'}>
-        <ChannelContext.Provider value={'code'}>
-          <CompC />
-        </ChannelContext.Provider>
-      </UserContext.Provider>
-      <CounterOne/>
-      <CounterTow/>*/}
-      <CounterThree/>
+      Count - {count}
+      <CompA />
+      <CompB />
+      <CompC />
 
     </div>
+    </CountContext.Provider>
   );
 }
 
