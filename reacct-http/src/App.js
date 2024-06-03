@@ -1,12 +1,12 @@
 import React from 'react'
 import './App.css';
-import UseStateHook from './components/Rect_Render/UseState/UseStateHook';
+import {UseReducer} from './components/Rect_Render/UseReducer/UseReducer';
 
 
 function App() {
   return (
     <div className='App'>
-     <UseStateHook/>
+     <UseReducer/>
     </div>
   );
 }
